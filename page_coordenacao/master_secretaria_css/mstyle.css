@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* resetei o body da pagina com um codigo open source, a estilizacao começa desta linha para baixo
+caso deletar o codigo acima adicionar o list-style:none; para todas as UL 
+---- nao deletar o import no topo da pagina ------*/
+
+
+body {
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: 3vh;
+	background-color: #f8f8f8;
+}
+
+/* define a largura da lista */
+nav ul#menu {
+	width: 100%;
+}
+
+/* aplica uma borda embaixo dos elementos da lista, usei ">" para ficar somente na lista principal
+e nao nas listas de dropdown */
+
+#menu-top, #menu-bot
+{
+	outline: 1px solid rgba(255,255,255,.5);
+}
+
+nav ul#menu>li {
+	
+}
+
+
+/* aqui todos os links dentro dos itens da lista serao estilizados, usei ">" para identificar somente
+os links da lista principal e nao das listas de dropdown */
+nav ul#menu>li>a {
+	position: relative;
+	color: #fff;
+	padding: 4%;
+	display: block;
+	text-decoration: none;
+	transition: all ease-in-out .2s;
+
+}
+
+
+/* faz o efeito hover somente nos links da lista principal */
+
+#menu>li>a:hover {
+	background-color: rgba(0,0,0,.2);
+	color: white;
+	/*background: linear-gradient(to right,#ab6c07,#f7af3b,#f7af3b,#f7af3b,#f7af3b,#f7af3b,#f7af3b,#f7af3b,#ab6c07);*/
+	text-decoration: none;
+}
+
+/* ----- estiliza os links dentro das listas dropdown ------- */
+
+ul#menu ul.sidemenu li a {
+	padding: 3% 3% 3% 20%;
+	position: relative;
+	display: block;
+	transition: all ease-in-out .2s;
+}
+
+/* faz o efeito hover somente nos links da lista drop down */
+ul.sidemenu li a
+{
+	font-size: 2.7vh;
+	color:#fff;
+	text-decoration: none;
+}
+ul.sidemenu li a:hover{
+	background-color: rgba(0,0,0,.2);
+	color: white;
+	/*background: linear-gradient(to right,#ab6c07,#f9c36c,#f9c36c,#f9c36c,#f9c36c,#f9c36c,#f9c36c,#f9c36c,#ab6c07);*/
+	text-decoration: none;
+}
